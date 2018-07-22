@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>References Page</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <meta name="author" content="Peter Neilson">
+        <meta name="description" content="Mountain Bike Sales & Service">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td><img src="img/favicon.png" alt="Logo" style="float:left;width:125px;"></td>
+                    <td>
+                        <p id="headerText">The Mountain Spoke</p>
+                        <p id="subHeaderText">Specializing in bike sales, parts, service and tours.</p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="adventureTours.html">Adventure Tours</a>
+            <a href="events.html">Events</a>
+            <a href="sales.html">Sales</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">&#9776;</a> <!-- &#9776 = hamburger symbol -->
+        </div>
+
+        <picture id="topimage">
+            <source media="(min-width: 768px)" srcset="img/768trailpeek_trailhead.jpg">
+            <source media="(min-width: 480px)" srcset="img/480trailpeek_trailhead.jpg">
+            <img src="img/1028trailpeek_trailhead.jpg" alt="image">
+        </picture>
+
+
+
+
+
+        <footer>
+            <aside>
+                The Mountain Spoke<br>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59718<br>
+
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span><a href="references.html">ReferenceThe%20Mountain%20Spoke.mp4">Overview Video</a></span> | <span id="jsdate"></span></p>
+        </footer>
+
+
+        <script src="js/script.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/include.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/hamburger.js"></script>
+        <!--    <script src="js/wayfinder.js"></script>-->
+
+    </body>
+</html>

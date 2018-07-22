@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Events</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <meta name="author" content="Peter Neilson">
+        <meta name="description" content="Mountain Bike Sales & Service">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td><img src="img/favicon.png" alt="Logo" style="float:left;width:125px;"></td>
+                    <td>
+                        <p id="headerText">The Mountain Spoke</p>
+                        <p id="subHeaderText">Specializing in bike sales, parts, service and tours.</p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+
+            <div class="topnav" id="myTopnav">
+            <a href="index.html" >Home</a>
+            <a href="adventureTours.html">Adventure Tours</a>
+            <a href="events.html"class="active">Events</a>
+            <a href="sales.html">Sales</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">&#9776;</a> <!-- &#9776 = hamburger symbol -->
+        </div>
+
+        <picture id="topimage">
+            <source media="(min-width: 768px)" srcset="img/768trailpeek_trailhead.jpg">
+            <source media="(min-width: 480px)" srcset="img/480trailpeek_trailhead.jpg">
+            <img src="img/1028trailpeek_trailhead.jpg" alt="image">
+        </picture>
+
+        <main>
+
+            <article class="news">
+                <h3>Cycle the Continental Divide</h3>
+
+                <p id="town-article">
+                “Cycle the Continental Divide”   Do you love to feel that you are one with nature? Here at The Mountain Spoke we do to. Come join us at "Cycle the Continental Divide" It begins Semptember 8, 2018. Starts in  Jasper, AB to Antelope Wells, NM (3083.8 mi.)
+                </p>
+
+                <p>The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide in southern Canada and the U.S. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Nearly 2,100 miles of the route is composed of county, Forest Service, Bureau of Land Management (BLM), and Canadian provincial unpaved roads. The remainder is 60 miles of singletrack trails and 950 miles of paved roads including close to 50 miles of paved bike paths.
+                </p>
+
+                <p>The route is geographically divided into five regions. The diverse nature of the regions makes for an incredible visual, sometimes spiritual experience. The route offers something different every day — whether it be riding conditions, scenery, points of interest, or folks along the way. It is a route to be enjoyed for its diversity.</p>
+            </article>
+
+            <h1>Registration</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+
+                    <legend>Rider Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" minlength="4" required></label>
+                    <label class="top">Date of Birth <input type="date" name="dob" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Home State or Country <input type="text" name="state" placeholder="TX"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Accommodations/Comments</legend>
+                    <textarea name="message" rows="10" cols="30">additional information or comments</textarea>
+                </fieldset>
+                <input type="submit" value="Rider Ready" class="submitBtn">
+
+            </form>
+
+        <footer>
+            <aside>
+                The Mountain Spoke<br>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 59718<br>
+
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span><a href="references.html">References</a></span> | <span><a href="">Overview Video</a></span> | <span id="jsdate"></span></p>
+        </footer>
+
+
+        <script src="js/script.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/include.js"></script>
+        <script src="js/index.js"></script>
+            <script src="js/hamburger.js"></script>
+        <!--    <script src="js/wayfinder.js"></script>-->
+
+    </body>
+</html>

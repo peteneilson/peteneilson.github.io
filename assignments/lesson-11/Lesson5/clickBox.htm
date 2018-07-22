@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clickbox.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+    $(function(){
+        // jQuery Code goes here
+
+//        $('.boxHolder').on('click', 'li', function(){
+//            $(this).addClass('greenBox');
+//        })
+//
+//        $('.boxHolder').on('dblclick', 'li', function(){
+//            $(this).addClass('orangeBox');
+//        })
+
+        $('.boxHolder').on({
+            click: function(){
+                //the Click Handler
+                $(this).addClass('greenBox').html($(this).index());
+            },
+
+            dblclick: function(){
+                $(this).addClass('orangeBox').html($(this).index());
+                // the double-click handler
+            },
+
+            mouseenter: function(){
+                // When the mouse pointer enter the refion of the list item(s)
+                $(this).css('opacity', 0.3);
+            },
+
+            mouseleave: function(){
+                // When the mouse pointer leaves the refion of the list item(s)
+                $(this).css('opacity', 1.0);
+            }
+        }, "li")
+    })
+    </script>
+</head>
+<body>
+    <ul class="boxHolder">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

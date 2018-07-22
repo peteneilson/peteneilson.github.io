@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, inital-scale=1">
+        <title>Trail Weather</title>
+        <meta name="description" content=" Local weather for mountain bike and hiking trails - Trail Weather">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+
+    </head>
+    <body>
+
+        <header>
+            <img src="img/twister.jpg" alt="Logo">
+            <div id="header">
+
+                <div id="siteTitle"><h1>Trail Weather</h1>
+                </div>
+                <div class= "subheading">
+                    "We have your Mountain Bike and Hiking Trail weather needs covered!"
+                </div>
+            </div>
+
+
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+
+
+        </nav>
+
+        <main>
+
+            <h1>Report A Storm</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+
+                    <legend>Spotter Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fullName" minlength="4" required></label>
+
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Zip Code <input type="number" name="zipCode" placeholder="12345"></label>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <label class="top">Storm Type
+                        <select name="stormType">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="flashflood">Flash Flood</option>
+                            <option value="hail">Hail</option>
+                            <option value="hurricane">Hurricane</option>
+                            <option value="thunderstorm">Thunderstorm</option>
+                            <option value="tornado">Tornado</option>
+                        </select>
+                    </label>
+
+                    <label class="rating">Rating (1 to 10)</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+
+                    <label class="top">Storm Region
+                        <select name="stormRegion">
+                            <option value="">Select Region &#9662;</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+
+                    <div>User In-Danger Level</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="mabye">Mabye</label>
+                    <label class="sbs"><input type="radio" name="danger" value="advanced">No</label>
+
+                    <textarea name="message" rows="10" cols="30">additional information or comments</textarea>
+
+                </fieldset>
+
+
+
+                <input type="submit" value="Report My Storm" class="submitBtn">
+
+
+
+            </form>
+
+
+
+
+        </main>
+
+        <footer>
+            <section class="contact">
+                Contact information placeholder
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/adjustRating.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, inital-scale=1">
+        <title>Trail Weather</title>
+        <meta name="description" content=" Local weather for mountain bike and hiking trails - Trail Weather">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+
+    </head>
+    <body>
+
+        <header>
+            <img src="img/twister.jpg" alt="Logo">
+            <div id="header">
+
+                <div id="siteTitle"><h1>Trail Weather</h1>
+                </div>
+                <div class= "subheading">
+                    "We have your Mountain Bike and Hiking Trail weather needs covered!"
+                </div>
+            </div>
+
+
+        </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+
+        </nav>
+
+        <main>
+
+            <figure class="franklinphoto">
+                <img src="img/franklin-originallarge.jpg" alt="Franklin" sizes="75vw"
+                     srcset="img/franklin-originalsmall400.jpg 400w,
+                             img/franklin-originalmedium600.jpg 600w,
+                             img/franklin-originallarge.jpg 1000w">
+            </figure>
+            <h2>Franklin</h2>
+                <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <!--              need to look up degree symbol -->
+                    <p>High: <span id='hiTemp'>00</span>&deg;</p>
+                    <p>Low: <span id="loTemp"> 00</span>&deg; </p>
+                </div>
+                <div class="current">
+                    <p>Current Temp: <span id="currentTemp"> </span> F </p>
+                    <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 15%</p>
+
+                    <p>Wind Speed: <span id="windSpeed"> </span> mph SW</p>
+
+                    <p>Windchill <span id="windchill"> </span></p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <img src="img/weathersiterain.jpg" alt="Franklin Pic">
+                <p class="town-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus non libero faucibus scelerisque. Sed fringilla semper ligula, vitae elementum nulla tincidunt sit amet. Pellentesque id commodo quam, in pellentesque augue. Proin et turpis eu neque placerat lacinia vel eget sapien. Curabitur nec ornare dui. Proin et arcu at augue aliquam eleifend eu quis elit. Donec auctor ultrices justo nec auctor. Ut in lectus at massa interdum semper id ac leo. Cras viverra fermentum sem, a porttitor elit posuere ac. Maecenas placerat elit eget leo malesuada, a pretium risus convallis. Morbi vulputate tempor gravida. Suspendisse viverra euismod finibus. Nam convallis, enim eget fermentum congue, elit dui ornare tortor, at maximus leo felis vitae lorem.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <section class="contact">
+                Contact information placeholder
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/currentdate.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>

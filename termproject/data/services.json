@@ -1,0 +1,39 @@
+{
+    "services" : [
+        {
+            "serviceType": "Traditional Wheel Build",
+            "cost": "$50"
+        },
+        {
+            "serviceType": "Carbon Rim or Internal Nipple Wheel Build",
+            "cost": "$60"
+        },
+
+        {
+            "serviceType": "Pro Build (From The Frame Up. Includes 1 Year of Break In Adjustments)",
+            "cost": "$150"
+        },
+
+        {
+            "serviceType": "New Bike Assembly (Partially Assembled From A Box. Includes 1 Year of Break In Adjustments)",
+            "cost": "$70"
+        },
+        {
+            "serviceType": "New Bike Assembly No Gears (Partially Assembled From A Box. Includes 1 Year of Break In Adjustments)",
+            "cost": "$40"
+        },
+
+        {
+            "serviceType": "Deraileur Adjust, Lube and Align",
+            "cost": "$20"
+        },
+        {
+            "serviceType": "Brake Adjust, Lube and Align (Per Brake)",
+            "cost": "$15"
+        },
+        {
+            "serviceType": "Disc Brake Hydraulic Bleed (Per Brake)",
+            "cost": "$35"
+        }
+    ]
+}

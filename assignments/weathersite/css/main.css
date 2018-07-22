@@ -1,0 +1,240 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}   This wildcard applies to all elements ensuring a box layout model
+
+body {
+    font-size: 16px;
+    font-family: source-sans-pro;/* Declare the base font-family */
+
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 90%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: .5rem auto;
+    border: 2px solid slategray;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: lightgray;
+    text-align: center;
+    border-radius:20px 20px 20px 20px;}
+
+header {
+    padding-top: 1%;
+    padding-left: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: lightslategray;
+
+}
+header h1 {
+    margin-left: 5%;
+    text-align: left;
+}
+
+
+header .subheading {
+    margin-left: 2%;
+    text-align: left;
+    }
+
+nav button {
+    margin: .02rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: slategray;
+}
+
+nav {
+    background-color: #ccc;
+    font-family: sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    flex: 2em;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a { background-color: rgba(0,0,0,0.2); color: #fff;}
+nav ul li a:hover { background-color: rgba(0,0,0,0.4);}
+nav ul.hide {display: none;}
+
+nav img{
+    width: 100%;
+}
+main {
+
+    border: 2px solid slategray;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: lightgray;
+    text-align: center;
+    border-radius:20px 20px 20px 20px;
+}
+
+main h2 {text-align: center;}
+main figure.franklinphoto { margin: 0 0 .2rem 2%; width:96%; }
+main figure.franklinphoto img {
+    width: 90%;
+}
+
+
+section.franklin, .greenville, .springfield {
+
+    display: inline-flex;
+    grid-gap: 20px;border: gray solid 1px;
+    border-radius: 10px;
+/*    background color: gray;*/
+}
+
+section h3{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/*------------FORM ---------------------*/
+
+
+form fieldset {
+
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+
+form legend{
+    color: darkslateblue;
+    margin: 0 3rem;
+    padding: 0 .5rem;
+
+}
+
+
+form label.top, form label.rating, form div {
+    display: block;
+    padding-top: 1rem;
+    color: slateblue;
+    font-size: .9rem;
+
+}
+
+form label.top input,form label.top form label.top select {
+    -webkit-appearance: none;
+    display: flex;
+
+    font-size: 1rem;
+    border: solid 3px #999;
+    border-radius: 15px;
+    padding: .75rem;
+    color: slategray;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #555;
+
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+
+}
+
+form textarea {
+    width: 375px;
+    height: 150px;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+
+}
+
+
+.forecast{
+
+    display: none;
+
+
+}
+
+section {text-align: center;
+
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.grid img {
+    max-width: 100%;
+    padding: 5px;
+}
+
+article {	display: inline-block;
+    border: 2px solid slategray;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: lightgray;
+    text-align: center;
+    border-radius:20px 20px 20px 20px;
+
+}
+article img {
+
+    max-width:50%;
+    max-height:50%;
+    margin-left:15px;
+    float: right;
+    padding-bottom: 10px;
+    overflow: auto;
+
+}
+
+footer {
+    background: lightslategray;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
