@@ -38,17 +38,12 @@ main {
     padding: 20px;
 }
 
-.myList {
-    display: inline-block;
-    padding: 50px;
-}
-
 article {
-    display: inline-block;
+
     border: 2px solid gray;
     padding: 5px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     background-color: lightgrey;
     text-align: center;
     border-radius: 25px 25px 25px 25px;
@@ -72,20 +67,6 @@ table.homeTable img {
     overflow: auto;
 }
 
-/*-------------------SERVICES PRICE LIST---------------------*/
-/*
-#myList {
-    display: inline-block;
-    margin: 15px 18px;
-    border: 2px solid #0066cc;
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #d1e5f9;
-    text-align: left;
-    border-radius:30px 30px 30px 30px;
-}
-*/
 
 /*------------NAVIGATION BAR W3---------------------*/
 
