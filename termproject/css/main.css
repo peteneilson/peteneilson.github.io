@@ -165,10 +165,7 @@ table.saleTable img {
         border: 1px solid #ccc;
         background: #fff;
     }
-}
 
-/* Display links vertically instead of horizontally when less-than 600px wide*/
-@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
         flex-direction: column;
