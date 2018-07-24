@@ -5,3 +5,10 @@
 
     nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
 
+    article {
+
+
+        font-size: 14px;
+        font-weight: 500;
+
+    }
