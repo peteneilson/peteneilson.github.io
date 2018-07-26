@@ -108,7 +108,7 @@ table.saleTable img {
     padding: 10px;
     overflow: auto;
 }
-/*------------NAVIGATION BAR W3---------------------*/
+/*------------NAVIGATION BAR--------------------*/
 
 /* Add background color navbar */
 .topnav {
@@ -267,8 +267,6 @@ form label.top input:required:valid { border-left: green solid 6px; }
 iframe{
 
     max-width: 90%;
-
-
     overflow: auto;
 }
 /*-----------FOOTER---------------*/
