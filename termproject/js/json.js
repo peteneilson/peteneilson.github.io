@@ -29,6 +29,6 @@ function showServiceInfo(jsonObj) {
         myArticle.appendChild(para1);
         myArticle.appendChild(para2);
 
-//        section.appendChild(myArticle);
+        section.appendChild(myArticle);
     }
 }
